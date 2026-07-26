@@ -1,0 +1,16 @@
+{
+  "name": "selenium-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chromedriver": "^150.0.4",
+    "selenium-webdriver": "^4.46.0"
+  }
+}

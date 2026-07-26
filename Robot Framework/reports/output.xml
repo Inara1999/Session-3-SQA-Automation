@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.12.4 on win32)" generated="2026-07-26T01:07:56.263623" rpa="false" schemaversion="5">
+<suite id="s1" name="WebsiteNavigation" source="C:\Users\Temp\Desktop\DafiLab Material\SQA Automation\Robot Framework\WebsiteNavigation.robot">
+<test id="s1-t1" name="Open Website And Navigate To About" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-07-26T01:07:56.813198" level="INFO">Opening browser 'Chrome' to base url 'https://personal-profile-rho-six.vercel.app/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-07-26T01:07:56.813198" elapsed="4.729350"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-07-26T01:08:01.543544" elapsed="0.003988"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2026-07-26T01:08:01.559501" level="INFO">${title} = INARA BAHADAR | SQA Intern &amp; Aspiring QA Engineer</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2026-07-26T01:08:01.548529" elapsed="0.010972"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>INARA</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2026-07-26T01:08:01.560502" elapsed="0.000997"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-07-26T01:08:01.566480" level="INFO">Clicking element 'link:About'.</msg>
+<arg>link:About</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-26T01:08:01.562492" elapsed="0.154552"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id:about</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-07-26T01:08:01.718048" elapsed="0.112700"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-07-26T01:08:02.253773" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-07-26T01:08:01.831743" elapsed="0.422030"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-07-26T01:08:05.255475" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-07-26T01:08:02.254767" elapsed="3.000708"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-07-26T01:08:05.256437" elapsed="2.465923"/>
+</kw>
+<status status="PASS" start="2026-07-26T01:07:56.811205" elapsed="10.912153"/>
+</test>
+<status status="PASS" start="2026-07-26T01:07:56.265626" elapsed="11.460731"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="WebsiteNavigation" id="s1" pass="1" fail="0" skip="0">WebsiteNavigation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
